@@ -18,7 +18,10 @@
   "homepage": "https://github.com/sdlbp/TDL_ts#readme",
   "dependencies": {
     "@type-challenges/utils": "^0.1.1",
-    "tsd": "^0.13.1"
+    "@types/node": "^18.6.2",
+    "tsd": "^0.13.1",
+    "tslint": "^6.1.3",
+    "typescript": "^4.7.4"
   },
   "tsd": {
     "directory": "test-dts",
