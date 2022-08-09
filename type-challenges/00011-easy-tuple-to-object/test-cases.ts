@@ -12,5 +12,12 @@ type cases = [
 const abc = typeof tupleNumber;
 console.log('--lbp 13', 'test-cases.ts', abc, '');
 
+const test = (abc: TupleToObject<typeof tuple>) => {
+    console.log('--lbp 16', 'test-cases.ts', 'test', abc);
+    console.log('--lbp 17', 'test-cases.ts', 'test', abc.tesla);
+    // @ts-expect-error
+    console.log('--lbp 18', 'test-cases.ts', 'test', abc.a);
+};
+
 // @ts-expect-error
 type error = TupleToObject<[[1, 2], {}]>
