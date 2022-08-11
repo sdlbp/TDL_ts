@@ -10,4 +10,7 @@ export type Includes<T extends readonly any[], U> =  T extends [infer First, ...
 * 递归每个元素进行比较
 *
 * 错误2：infer... Reset
+*
+* 错误3：type Includes<T, K> = K extends T ? true : false - 0811
+* 错误1和3都错误的认为，数组元素解构的方式
 * */
