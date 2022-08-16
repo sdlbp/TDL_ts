@@ -1,4 +1,5 @@
 import type { Equal, Expect } from '@type-challenges/utils'
+import type { MyExclude } from "./template";
 
 type cases = [
     Expect<Equal<MyExclude<'a' | 'b' | 'c', 'a'>, 'b' | 'c'>>,
